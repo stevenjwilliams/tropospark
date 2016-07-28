@@ -1,0 +1,37 @@
+/*input:invalid {
+  font-size: 200%;
+}
+
+input:valid {
+  font-size: 200%;
+}*/
+
+#meetingNumber {
+	font-size: 200%;
+}
+
+#meetingNumberField {
+	width: 300px;
+}
+
+.checkbox-blue[type="checkbox"].filled-in:checked + label:after{
+     border: 2px solid #64b5f6;
+     background-color: #64b5f6;
+}
+
+/*.input-field label {
+  color: #64b5f6;
+}
+
+.input-field input[type=text]:focus + label {
+  color: #64b5f6;
+}
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #64b5f6;
+  box-shadow: 0 1px 0 0 #64b5f6;
+}*/
+
+/*.option {
+	color: #64b5f6;
+}*/

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/validate.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body bgcolor="#eeeeee">
+
+    <div class="row" id="title">
+      <div class="col">
+        <h4>WebEx Meeting Alert (via Tropo-Spark Integration)</h4>
+      </div>
+    </div>
+
+    <div id="entry">
+
+      <div class="row">
+        <div class="col s2">
+          <div class="card-panel" id="meetingNumberField">
+            <div class="input-field">
+              <input id="meetingNumber" value="712409129" type="text" class="validate" pattern="[0-9]{9}">
+              <label for="meetingNumber">Meeting Number</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <button class="btn waves-effect waves-light blue lighten-2" id="meetingNumberButton" onclick="getAttendees()">Get Attendees</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="attendeeList"></div>
+
+    <div id="successMessage"></div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
+  </body>
+</html>
