@@ -1,0 +1,19 @@
+{
+  "name": "node-example",
+  "version": "4.4.7",
+  "description": "This example is so cool.",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "stevenjw",
+  "license": "Cisco",
+
+  "engines": {
+    "node": "4.7.7"
+  }
+}
