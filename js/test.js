@@ -183,29 +183,16 @@ function addToQuizRoom(email) {
 }
 
 function sendReminders() {
-        var http = require('http');
-
-        var tropo_webapi = require('tropo-webapi');
-
-
-        var server = http.createServer(function (request, response) {
-
-
-   	var tropo = new TropoWebAPI();
-
-
-	//to, answerOnMedia, channel, from, headers, name, network, recording, required, timeout
-
-	tropo.call("+15619011356", null, null, null, null, null, "SMS", null, null, null);
-
-	tropo.say("Tag, you're it!!");
-
-	
-        response.end(TropoJSON(tropo));
-
-}).listen(8000);  
-
-
+        $.ajax({
+      url:'myAjax.php',
+      complete: function (response) {
+        console.log(response.responseText);
+      },
+      error: function () {
+          console.log('Bummer: there was an error!');
+      }
+       });
+   
 	for (i = 0; i < attendees.length; i++) {
 		var email = attendees[i].textContent;
 	    username = email.substring(0, email.indexOf('@'));
